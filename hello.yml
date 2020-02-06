@@ -3,5 +3,5 @@
   hosts: rpis
 
   roles:
-    - role: hellp
+    - role: hello
       become: yes
