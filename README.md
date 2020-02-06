@@ -4,7 +4,7 @@
 
 Install Ansible on the host.
 
-    sudo apt-get install ansible
+    sudo apt-get install ansible sshpass
     ansible --version
 
 ## Prepare target
