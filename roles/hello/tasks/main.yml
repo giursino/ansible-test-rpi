@@ -1,7 +1,6 @@
 ---
-- name: Test reachability to 8.8.8.8
-  net_ping:
-    dest: 8.8.8.8
+- name: Test internet connection
+  ping:
 
 - name: Copy example files
   copy:
