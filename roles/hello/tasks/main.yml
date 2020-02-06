@@ -1,0 +1,8 @@
+- name: Test reachability to 8.8.8.8
+  net_ping:
+    dest: 8.8.8.8
+
+- name: Copy example files
+  copy:
+    src: files/custom-configuration.conf
+    dest: /tmp/custom-configuration.conf

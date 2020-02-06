@@ -1,0 +1,7 @@
+---
+- name: Hello world with ansible on Raspberry
+  hosts: rpis
+
+  roles:
+    - role: hellp
+      become: yes
