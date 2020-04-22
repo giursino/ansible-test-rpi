@@ -1,4 +1,4 @@
-FROM alpine
+FROM python:alpine
 MAINTAINER Giuseppe Ursino <giursino@gmail.com>
 
 # add openssh and clean

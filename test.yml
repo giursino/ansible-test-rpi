@@ -1,0 +1,7 @@
+---
+- name: Hello world with ansible on Docker container
+  hosts: test
+
+  roles:
+    - role: hello
+      become: yes
