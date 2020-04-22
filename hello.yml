@@ -1,7 +1,14 @@
 ---
 - name: Hello world with ansible on Raspberry
   hosts: rpis
+  vars_files:
+    - secrets.yml
 
   roles:
     - role: hello
       become: yes
+
+  tasks:
+    - name: View encrypted variables
+      debug:
+        msg: 'gituser={{ gituser }}, gitpass={{ gitpass }}'
